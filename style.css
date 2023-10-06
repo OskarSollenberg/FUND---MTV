@@ -214,11 +214,11 @@ p {
   padding: 1.5rem;
 }
 
-.marquee {
+.banner {
   overflow: hidden;
 }
 
-.marquee__content {
+.banner__content {
   background-color: var(--clr-blue);
   display: flex;
   align-items: center;
@@ -226,12 +226,12 @@ p {
   margin-left: -100vw;
 }
 
-.marquee-objects {
+.banner-objects {
   position: relative;
-  animation: marquee 20s linear infinite;
+  animation: banner 20s linear infinite;
 }
 
-@keyframes marquee {
+@keyframes banner {
   from {
     left: 0;
   }
