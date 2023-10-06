@@ -1,0 +1,389 @@
+@use "variables";
+
+//* Layout
+.site__wrapper {
+    max-width: 80rem;
+    margin-inline: auto;
+
+    @media (min-width: variables.$breakpoint-xsm) {
+        padding-inline: 1rem;
+    }
+}
+.site__main {
+    // background: var(--clr-black);
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(
+            #1d1d1d 25%,
+            #1a1a1a 25%,
+            #1a1a1a 50%,
+            transparent 50%,
+            transparent 75%,
+            #242424 75%,
+            #242424
+        );
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+.site__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-md);
+    grid-template-areas:
+        "title"
+        "hero"
+        "sidebar"
+        "pimp__my__ride"
+        "extreme__home__makeover";
+    @media (min-width: variables.$breakpoint-md) {
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: repeat(auto);
+        grid-template-areas:
+            "title title"
+            "hero sidebar"
+            "pimp__my__ride pimp__my__ride"
+            "extreme__home__makeover extreme__home__makeover";
+
+        @media (min-width: variables.$breakpoint-lg) {
+            grid-template-columns: 1fr 0.3fr;
+        }
+    }
+}
+
+//* Section styling
+.section {
+    padding: 1rem;
+    background: var(--clr-grey);
+}
+.section__heading span {
+    color: var(--clr-black);
+    font-size: 1rem;
+}
+.section__heading {
+    padding: 1.5rem;
+}
+
+//* Marquee
+.marquee {
+    overflow: hidden;
+    // width: 100vw;
+}
+.marquee__content {
+    background-color: var(--clr-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -100vw;
+}
+.marquee-objects {
+    position: relative;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100vw;
+    }
+}
+
+//* Header
+.site__header {
+    width: 100%;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: var(--clr-blue);
+}
+.site__header__nav {
+    @media (min-width: variables.$breakpoint-sm) {
+        display: flex;
+        justify-content: end;
+    }
+}
+.site__header__menu {
+    display: none;
+}
+.site__header__link {
+    background: var(--clr-grey);
+    padding: 1rem;
+}
+.site__header__pop-up__text {
+    color: var(--clr-pink);
+    text-align: center;
+
+    @media (min-width: variables.$breakpoint-sm) {
+        display: none;
+    }
+}
+
+//* Navigation styling
+.nav__item {
+    font-size: var(--fs-md);
+
+    :hover {
+        color: var(--clr-white);
+        background: var(--clr-blue);
+        box-shadow: var(--box-shadow-pink);
+    }
+}
+.nav__menu {
+    @media (min-width: variables.$breakpoint-sm) {
+        display: flex;
+        gap: var(--gap-md);
+    }
+}
+
+//* Accordian / Hamburger-menu
+.accordian {
+    background-color: var(--clr-grey);
+    top: 1rem;
+    left: 0;
+    padding: 0.5rem;
+    position: absolute;
+}
+.accordian__image {
+    width: 2rem;
+}
+.accordian__item {
+    border-bottom: 1px solid var(--clr-blue);
+}
+
+//* Section Quote
+.section-quote {
+    grid-area: title;
+}
+
+//* Hero
+.hero {
+    grid-area: hero;
+}
+.hero__grid {
+    padding: 1rem;
+    background-image: url(images/backgrounds/glitch.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    gap: var(--gap-md);
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 3rem);
+    grid-template-areas:
+        "A B C D"
+        "E F G H"
+        "I J K L";
+
+    @media (min-width: variables.$breakpoint-xsm) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 4rem);
+        grid-template-areas:
+            "A B C"
+            "D E F"
+            "G H I"
+            "J K L";
+    }
+    @media (min-width: variables.$breakpoint-sm) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 6rem);
+        grid-template-areas:
+            "A B C D"
+            "E F G H"
+            "I J K L";
+    }
+    @media (min-width: variables.$breakpoint-lg) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 7rem);
+        grid-template-areas:
+            "A B C D E"
+            "F F G H I"
+            "F F J K L";
+    }
+
+    .items {
+        border-radius: 0.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__item1 {
+        grid-area: A;
+        background-image: url(images/hero-gifs/one.gif);
+    }
+    &__item2 {
+        background-image: url(images/hero-gifs/two.gif);
+        grid-area: B;
+    }
+    &__item3 {
+        background-image: url(images/hero-gifs/three.gif);
+        grid-area: C;
+    }
+    &__item4 {
+        background-image: url(images/hero-gifs/four.gif);
+        grid-area: D;
+    }
+    &__item5 {
+        background-image: url(images/hero-gifs/five.gif);
+        grid-area: E;
+    }
+    &__item6 {
+        background-image: url(images/hero-gifs/six.gif);
+        grid-area: F;
+    }
+    &__item7 {
+        background-image: url(images/hero-gifs/seven.gif);
+        grid-area: G;
+    }
+    &__item8 {
+        background-image: url(images/hero-gifs/eight.gif);
+        grid-area: H;
+    }
+    &__item9 {
+        background-image: url(images/hero-gifs/nine.gif);
+        grid-area: I;
+    }
+    &__item10 {
+        background-image: url(images/hero-gifs/ten.gif);
+        grid-area: J;
+    }
+    &__item11 {
+        background-image: url(images/hero-gifs/eleven.gif);
+        grid-area: K;
+    }
+    &__item12 {
+        background-image: url(images/hero-gifs/twelve.gif);
+        grid-area: L;
+    }
+}
+
+//* Sidebar
+.sidebar {
+    grid-area: sidebar;
+    padding: 0.5rem;
+}
+.sidebar__heading,
+.sidebar__link {
+    font-family: var(--ff-windows95);
+    color: var(--clr-pink);
+}
+.sidebar__heading {
+    font-size: 2rem;
+}
+.sidebar__heading,
+.sidebar__item {
+    @media (min-width: variables.$breakpoint-md) {
+        text-align: start;
+    }
+}
+.sidebar__item {
+    :hover {
+        background: var(--clr-green);
+    }
+}
+.sidebar__link {
+    text-decoration: underline;
+    font-size: 0.75rem;
+}
+
+// *Articles
+.pimp__my__ride {
+    grid-area: pimp__my__ride;
+}
+.extreme__home__makeover {
+    grid-area: extreme__home__makeover;
+}
+// *Article styling
+.article {
+    display: grid;
+    column-gap: var(--gap-md);
+    border-top: 1rem solid var(--clr-blue);
+
+    @media (min-width: variables.$breakpoint-xsm) {
+        padding-inline: 2rem;
+    }
+    @media (min-width: variables.$breakpoint-sm) {
+        padding-inline: 5rem;
+    }
+}
+.article__grid {
+    text-align: center;
+    display: grid;
+    column-gap: var(--gap-md);
+    grid-template-areas:
+        "col1"
+        "col2";
+
+    @media (min-width: variables.$breakpoint-md) {
+        text-align: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "col1 col2";
+    }
+}
+.article__col-1,
+.article__col-2 {
+    display: grid;
+    gap: var(--gap-md);
+}
+.article__col-1 {
+    grid-area: col1;
+}
+.article__col-2 {
+    grid-area: col2;
+}
+.article__image {
+    scroll-snap-align: start;
+    padding: 0.5rem;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: auto;
+
+    @media (min-width: variables.$breakpoint-md) {
+        width: 10rem;
+    }
+}
+.image__float--right {
+    @media (min-width: variables.$breakpoint-md) {
+        float: right;
+    }
+}
+.image__float--left {
+    @media (min-width: variables.$breakpoint-md) {
+        float: left;
+    }
+}
+.article__carousel {
+    overflow: scroll;
+    gap: var(--gap-md);
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    &__image {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        width: 90%;
+        @media (min-width: variables.$breakpoint-sm) {
+            max-width: 50%;
+        }
+    }
+}
+
+//* Footer
+.site__footer {
+    gap: var(--gap-md);
+    width: 100%;
+    margin-top: 3rem;
+    background: var(--clr-grey);
+
+    &__logo {
+        width: 30px;
+        border-radius: 100%;
+    }
+}

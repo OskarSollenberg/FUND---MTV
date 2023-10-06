@@ -1,0 +1,38 @@
+@use "variables.scss";
+
+@font-face {
+    font-family: "MTV";
+    src: url("fonts/MtvLowercase1.woff") format("woff"),
+        url("fonts/MtvLowercase2.woff") format("woff");
+}
+html {
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--ff-windows95);
+    background: var(--clr-blue);
+}
+//* Typography
+h1 {
+    font-size: var(--fs-primary-heading);
+    text-align: center;
+    line-height: 2.5rem;
+}
+h1,
+a {
+    text-decoration: none;
+    font-family: var(--ff-mtv);
+    color: var(--clr-green);
+}
+h2 {
+    font-size: var(--fs-secondary-heading);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {
+    font-size: var(--fs-paragraph);
+    line-height: var(--lh-paragraph);
+    // background: var(--clr-grey);
+}
