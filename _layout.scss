@@ -92,7 +92,7 @@
 }
 
 //* Header
-.site__header {
+.site-header {
     width: 100%;
     z-index: 100;
     position: sticky;
@@ -101,62 +101,72 @@
     padding-bottom: 2rem;
     background: var(--clr-blue);
 }
-.site__header__nav {
-    @media (min-width: variables.$breakpoint-sm) {
+.site-header__nav {
+    @media (min-width: variables.$breakpoint-md) {
         display: flex;
         justify-content: end;
     }
 }
-.site__header__menu {
+.site-header__menu {
     display: none;
+    gap: var(--gap-md);
 }
-.site__header__link {
+.site-header__item {
+    :hover {
+        box-shadow: var(--box-shadow-pink);
+    }
+}
+.site-header__link {
     background: var(--clr-grey);
-    padding: 1rem;
+    padding: 0.8rem;
 }
-.site__header__pop-up__text {
+.site-header__pop-up__text {
     color: var(--clr-pink);
     text-align: center;
 
-    @media (min-width: variables.$breakpoint-sm) {
+    @media (min-width: variables.$breakpoint-md) {
         display: none;
     }
 }
 
 //* Navigation styling
+.site-header__menu--visable {
+    @media (min-width: variables.$breakpoint-md) {
+        display: flex;
+    }
+}
 .nav__item {
     font-size: var(--fs-md);
 
     :hover {
         color: var(--clr-white);
         background: var(--clr-blue);
-        box-shadow: var(--box-shadow-pink);
-    }
-}
-.nav__menu {
-    @media (min-width: variables.$breakpoint-sm) {
-        display: flex;
-        gap: var(--gap-md);
     }
 }
 
-//* Accordian / Hamburger-menu
-.accordian {
+//*Hamburger-menu / Accordian
+.hamburger {
     background-color: var(--clr-grey);
-    top: 1rem;
+    top: 28%;
     left: 0;
-    padding: 0.5rem;
     position: absolute;
 }
-.accordian__image {
-    width: 2rem;
+.hamburger__image {
+    width: 2.5rem;
+    padding: 0.5rem;
 }
-.accordian__item {
-    border-bottom: 1px solid var(--clr-blue);
+
+.hamburger__menu {
+    :hover {
+        background: var(--clr-blue);
+    }
+}
+.hamburger__item {
+    padding: 0.3rem;
 }
 
 //* Section Quote
-.section-quote {
+.section__quote {
     grid-area: title;
 }
 

@@ -73,7 +73,12 @@ svg {
     }
 }
 
+// remove inherit styles from details / summary
 details summary {
     cursor: pointer;
     list-style: none;
+    display: block;
+}
+details summary::-webkit-details-marker {
+    display: none;
 }
