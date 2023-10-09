@@ -1,18 +1,8 @@
 // TEXT
-.text--center {
+.is--align-center {
     text-align: center;
 }
-
 // FLEX-BOX
-.flex {
+.is--flex {
     display: flex;
-}
-.flex--center {
-    align-items: center;
-    justify-content: center;
-}
-
-// BUTTON-SHADOWS
-.stripe--shadow {
-    box-shadow: var(--box-shadow-button);
 }

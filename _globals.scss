@@ -1,10 +1,13 @@
 @use "variables.scss";
 
+//* Fonts
 @font-face {
     font-family: "MTV";
     src: url("fonts/MtvLowercase1.woff") format("woff"),
         url("fonts/MtvLowercase2.woff") format("woff");
 }
+
+//* global
 html {
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
@@ -13,6 +16,7 @@ body {
     font-family: var(--ff-windows95);
     background: var(--clr-blue);
 }
+
 //* Typography
 h2 {
     font-size: var(--fs-secondary-heading);
@@ -26,7 +30,6 @@ a {
     color: var(--clr-green);
 }
 h3 {
-    padding: 1rem 0 0.2rem 0;
     font-size: var(--fs-third-heading);
     font-weight: bold;
     text-decoration: underline;

@@ -142,7 +142,6 @@ a {
 }
 
 h3 {
-  padding: 1rem 0 0.2rem 0;
   font-size: var(--fs-third-heading);
   font-weight: bold;
   text-decoration: underline;
@@ -153,21 +152,12 @@ p {
   line-height: var(--lh-paragraph);
 }
 
-.text--center {
+.is--align-center {
   text-align: center;
 }
 
-.flex {
+.is--flex {
   display: flex;
-}
-
-.flex--center {
-  align-items: center;
-  justify-content: center;
-}
-
-.stripe--shadow {
-  box-shadow: var(--box-shadow-button);
 }
 
 .site__wrapper {
@@ -190,13 +180,13 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--gap-md);
-  grid-template-areas: "title" "hero" "sidebar" "pimp__my__ride" "extreme__home__makeover";
+  grid-template-areas: "title" "hero" "sidebar" "pimp" "extreme";
 }
 @media (min-width: 48rem) {
   .site__grid {
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: repeat(auto);
-    grid-template-areas: "title title" "hero sidebar" "pimp__my__ride pimp__my__ride" "extreme__home__makeover extreme__home__makeover";
+    grid-template-areas: "title title" "hero sidebar" "pimp pimp" "extreme extreme";
   }
 }
 @media (min-width: 48rem) and (min-width: 62rem) {
@@ -225,7 +215,6 @@ p {
 
 .banner__content {
   background-color: var(--clr-blue);
-  display: flex;
   align-items: center;
   justify-content: space-around;
   margin-left: -100vw;
@@ -255,7 +244,6 @@ p {
 
 @media (min-width: 48rem) {
   .site-header__nav {
-    display: flex;
     justify-content: end;
   }
 }
@@ -270,16 +258,17 @@ p {
 }
 
 .site-header__link {
+  box-shadow: var(--box-shadow-button);
   background: var(--clr-grey);
   padding: 0.8rem;
 }
 
-.site-header__pop-up__text {
+.site-header__pop-up-text {
+  margin: 0 auto;
   color: var(--clr-pink);
-  text-align: center;
 }
 @media (min-width: 48rem) {
-  .site-header__pop-up__text {
+  .site-header__pop-up-text {
     display: none;
   }
 }
@@ -445,17 +434,14 @@ p {
 }
 
 .article--pimp-my-ride {
-  grid-area: pimp__my__ride;
+  grid-area: pimp;
 }
 
 .article--extreme-home-makeover {
-  grid-area: extreme__home__makeover;
+  grid-area: extreme;
 }
 
 .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border-top: 1rem solid var(--clr-blue);
   padding-inline: 1rem;
 }
@@ -469,9 +455,11 @@ p {
     padding-inline: 4rem;
   }
 }
+.article h3 {
+  padding: 1rem 0 0.2rem 0;
+}
 
 .article__wrapper {
-  text-align: center;
   gap: var(--gap-md);
 }
 @media (min-width: 62rem) {
@@ -530,6 +518,8 @@ p {
 
 .site__footer {
   gap: var(--gap-md);
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-top: 3rem;
   background: var(--clr-grey);
