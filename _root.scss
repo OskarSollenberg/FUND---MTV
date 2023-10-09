@@ -5,11 +5,9 @@
     --ff-mtv: "MTV";
     --ff-windows95: "VT323", monospace;
 
-    --fs-primary-heading: clamp(1rem, 4vw + 1rem, 2.5rem);
-    --fs-secondary-heading: clamp(1.5rem, 2vw + 0.7rem, 2rem);
+    --fs-secondary-heading: clamp(0.8rem, 4vw + 1rem, 2.5rem);
+    --fs-third-heading: clamp(1.5rem, 2vw + 0.7rem, 2rem);
     --fs-paragraph: clamp(0.75rem, 1.5vw + 0.5rem, 1.2rem);
-
-    --lh-paragraph: 1.1;
 
     //* COLORS
     --clr-blue: #000099;

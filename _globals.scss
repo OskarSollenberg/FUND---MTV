@@ -14,19 +14,20 @@ body {
     background: var(--clr-blue);
 }
 //* Typography
-h1 {
-    font-size: var(--fs-primary-heading);
+h2 {
+    font-size: var(--fs-secondary-heading);
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
-h1,
+h2,
 a {
     text-decoration: none;
     font-family: var(--ff-mtv);
     color: var(--clr-green);
 }
-h2 {
-    font-size: var(--fs-secondary-heading);
+h3 {
+    padding: 1rem 0 0.2rem 0;
+    font-size: var(--fs-third-heading);
     font-weight: bold;
     text-decoration: underline;
 }
