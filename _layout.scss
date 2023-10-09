@@ -322,9 +322,11 @@
 .article__wrapper {
     gap: var(--gap-md);
 
+    @media (min-width: variables.$breakpoint-md) {
+        text-align: start;
+    }
     @media (min-width: variables.$breakpoint-lg) {
         display: flex;
-        text-align: start;
     }
 }
 .article__col-left,
@@ -339,6 +341,7 @@
     height: auto;
 
     @media (min-width: variables.$breakpoint-md) {
+        padding: 0.5rem;
         width: 30%;
     }
 }

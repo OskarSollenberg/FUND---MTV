@@ -462,10 +462,14 @@ p {
 .article__wrapper {
   gap: var(--gap-md);
 }
+@media (min-width: 48rem) {
+  .article__wrapper {
+    text-align: start;
+  }
+}
 @media (min-width: 62rem) {
   .article__wrapper {
     display: flex;
-    text-align: start;
   }
 }
 
@@ -483,6 +487,7 @@ p {
 }
 @media (min-width: 48rem) {
   .article__image {
+    padding: 0.5rem;
     width: 30%;
   }
 }
