@@ -1,4 +1,4 @@
-@use "variables.scss";
+@use "variables";
 
 //* Fonts
 @font-face {
@@ -38,5 +38,4 @@ h3 {
 p {
     font-size: var(--fs-paragraph);
     line-height: var(--lh-paragraph);
-    // background: var(--clr-grey);
 }
