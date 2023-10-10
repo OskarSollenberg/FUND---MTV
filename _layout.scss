@@ -70,6 +70,7 @@
     overflow: hidden;
 }
 .banner__content {
+    display: flex;
     background-color: var(--clr-blue);
     align-items: center;
     justify-content: space-around;
@@ -98,6 +99,7 @@
     background: var(--clr-blue);
 }
 .site-header__nav {
+    display: flex;
     @media (min-width: variables.$breakpoint-md) {
         justify-content: end;
     }
@@ -161,8 +163,11 @@
 }
 
 //* Section Quote
-.section__quote {
+.section-quote {
     grid-area: title;
+}
+.section-quote__text {
+    text-align: center;
 }
 
 //* Hero
@@ -269,6 +274,7 @@
 
 //* Sidebar
 .sidebar {
+    text-align: center;
     grid-area: sidebar;
     padding: 0.5rem;
 }
@@ -320,6 +326,7 @@
     }
 }
 .article__wrapper {
+    text-align: center;
     gap: var(--gap-md);
 
     @media (min-width: variables.$breakpoint-md) {
@@ -356,6 +363,7 @@
     }
 }
 .article__carousel {
+    display: flex;
     overflow: scroll;
     gap: var(--gap-md);
     scroll-snap-type: x mandatory;
@@ -373,6 +381,7 @@
 
 //* Footer
 .site__footer {
+    display: flex;
     gap: var(--gap-md);
     align-items: center;
     justify-content: center;

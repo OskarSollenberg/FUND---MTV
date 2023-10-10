@@ -214,6 +214,7 @@ p {
 }
 
 .banner__content {
+  display: flex;
   background-color: var(--clr-blue);
   align-items: center;
   justify-content: space-around;
@@ -242,6 +243,9 @@ p {
   background: var(--clr-blue);
 }
 
+.site-header__nav {
+  display: flex;
+}
 @media (min-width: 48rem) {
   .site-header__nav {
     justify-content: end;
@@ -307,8 +311,12 @@ p {
   padding: 0.3rem;
 }
 
-.section__quote {
+.section-quote {
   grid-area: title;
+}
+
+.section-quote__text {
+  text-align: center;
 }
 
 .hero {
@@ -403,6 +411,7 @@ p {
 }
 
 .sidebar {
+  text-align: center;
   grid-area: sidebar;
   padding: 0.5rem;
 }
@@ -460,6 +469,7 @@ p {
 }
 
 .article__wrapper {
+  text-align: center;
   gap: var(--gap-md);
 }
 @media (min-width: 48rem) {
@@ -505,6 +515,7 @@ p {
 }
 
 .article__carousel {
+  display: flex;
   overflow: scroll;
   gap: var(--gap-md);
   scroll-snap-type: x mandatory;
@@ -522,6 +533,7 @@ p {
 }
 
 .site__footer {
+  display: flex;
   gap: var(--gap-md);
   align-items: center;
   justify-content: center;
