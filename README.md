@@ -6,7 +6,7 @@ Hi, This is a beginner project i did at Hyper Island where im currently studiyin
 
 
 
-  <img align="right" alt="GIF" src="https://github.com/OskarSollenberg/fed25-fundamentals-mtv/assets/122973984/e5992fcb-1e75-4a48-8aa0-dd0afd1329b8" width="400"/>
+  <img align="right" alt="GIF" src="https://github.com/OskarSollenberg/fed25-fundamentals-mtv/assets/122973984/e5992fcb-1e75-4a48-8aa0-dd0afd1329b8" width="450"/>
 
 
 
@@ -81,12 +81,6 @@ Costum css-properties for easy accessibility
     }
 }
 ```
-
-<br>
-<br>
-<br>
-
-
 
 **💬 ask me about anything, i am happy to help**
 
