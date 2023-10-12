@@ -1,7 +1,7 @@
 # fed25-fundamentals-mtv
-Final website for fundamentals at Hyper Island
+Final website for the **fundamentals**-module at Hyper Island
 
-hi, This is a beginner project i did at Hyper Island where im currently studiying to become a Front End Developer. This was about a 2 week project were we were assigned to create a 90s-styled webpage from scratch. For this project i put alot of effort into structuring my code, making sure its very readable with styles that are easily interchangeable by the use of Css and Sass variables.  
+Hi, This is a beginner project i did at Hyper Island where im currently studiying to become a Front End Developer. This was about a 2 week project were we were assigned to create a 90s-styled webpage from scratch. For this project i put alot of effort into structuring my code, making sure its very readable with styles that are easily interchangeable by the use of Css and Sass variables.  
 
 
 
@@ -53,7 +53,8 @@ hi, This is a beginner project i did at Hyper Island where im currently studiyin
 - Sass-variables in nested @media-queries  
   set to the (Bootrap breakpoints-values).
 
-- Css costum properties for easy accessibility and dry code.
+- Costum css-properties for easy accessibility
+  and dry code.
 
 //* Header
 .site-header {
