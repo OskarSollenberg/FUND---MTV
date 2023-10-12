@@ -5,10 +5,11 @@ hi, This is a beginner project i did at Hyper Island where im currently studiyin
 
 
 
+
   <img align="right" alt="GIF" src="https://github.com/OskarSollenberg/fed25-fundamentals-mtv/assets/122973984/e5992fcb-1e75-4a48-8aa0-dd0afd1329b8" width="550"/>
-  
-- 💼 any questions? scroll for socials or reach a me on, [email](mailto:oskar@sollenberg.se) :)
-- 💬 ask me about anything, i am happy to help;
+
+
+
 
 ### Languages and Tools:
 
@@ -33,18 +34,27 @@ hi, This is a beginner project i did at Hyper Island where im currently studiyin
 
 - BEM naming convention.
 
+- Mobile-first workflow
+
 - Responsiveness using fluid units. 
 
 - Intergrating Parcel for better optimisation.
 
+
 <!--STRAT_SECTION:code-->
 
 <br>
-<br>
 
-**A bit of code**
+**A bit of code with**
 
 ```scss
+- BEM naming-convention for class-names.
+  
+- Sass-variables in nested @media-queries  
+  set to the (Bootrap breakpoints-values).
+
+- Css costum properties for easy accessibility and dry code.
+
 //* Header
 .site-header {
     width: 100%;
@@ -69,15 +79,19 @@ hi, This is a beginner project i did at Hyper Island where im currently studiyin
     }
 }
 ```
-<!--END_SECTION:code-->
 
-if you like what i do, maybe consider buying me a coffee/tea 🥺👉👈
+<br>
+<br>
+<br>
 
 
-### Connect with me:
+
+**💬 ask me about anything, i am happy to help**
 
 <p>
 <a href="https://github.com/thmsgbrt" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a> 
 <a href="https://www.linkedin.com/in/thomas-guibert" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="https://www.instagram.com/mokkapps/"><img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
 </p>
+
+
