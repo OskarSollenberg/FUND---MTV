@@ -45,16 +45,17 @@ Hi, This is a beginner project i did at Hyper Island where im currently studiyin
 
 <br>
 
-**A bit of code with**
+**A bit of code using:**
 
-```scss
-- BEM naming-convention for class-names.
+BEM naming-convention for class-names.
   
-- Sass-variables in nested @media-queries  
+Sass-variables in nested @media-queries  
   set to the (Bootrap breakpoints-values).
 
-- Costum css-properties for easy accessibility
+Costum css-properties for easy accessibility
   and dry code.
+  
+```scss
 
 //* Header
 .site-header {
