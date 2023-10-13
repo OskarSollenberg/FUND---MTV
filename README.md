@@ -38,7 +38,7 @@ Hi, This is a beginner project i did at Hyper Island where im currently studiyin
 
 - Responsiveness using fluid units. 
 
-- Intergrating Parcel for better optimisation.
+- Intergrate Parcel for better optimisation.
 
 
 <!--STRAT_SECTION:code-->
