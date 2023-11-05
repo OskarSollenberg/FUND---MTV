@@ -44,17 +44,7 @@ Hi, This is a beginner project i did at Hyper Island where im currently studiyin
 
 <br>
 
-**A bit of code using:**
-
-BEM naming-convention for class-names.
-  
-Sass-variables in nested @media-queries  
-  set to the (Bootrap breakpoints-values).
-
-Costum css-properties for easy accessibility
-  and dry code.
-
-
+**A bit of code:**
 
 ```js
 input.addEventListener("keypress", function (press) {
