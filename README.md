@@ -1,5 +1,5 @@
 # fed25-fundamentals-mtv
-Final website for the **fundamentals**-module at Hyper Island
+Hangman Game **If_This_Than_That(Javascript)**-module at Hyper Island
 
 Hi, This is a beginner project i did at Hyper Island where im currently studiying to become a Front End Developer. This was a game i worked on and of on during 2 days and it is the first projet i have ever done in javascript. It was very fun but also challanging. I spend about 90% googling how to do stuff and 10% coding but that made me learn alot. Hope you like it! 
 
